@@ -2,7 +2,7 @@
 (*                                                                    *)
 (*                         DP Lagrangian File                         *)
 (*                                                                    *)
-(* This file contains the Lagrangian for the LSS + the SM             *)
+(* This file contains the Lagrangian for the DP + the SM              *)
 (*                                                                    *)
 (**********************************************************************)
 

@@ -2,7 +2,7 @@
 (*                                                                    *)
 (*                           DP Particle File                         *)
 (*                                                                    *)
-(*   This file contains the LSS particle classes.                     *)
+(*   This file contains the DP particle classes.                      *)
 (*                                                                    *)
 (**********************************************************************)
 
