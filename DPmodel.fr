@@ -1,0 +1,90 @@
+(************************************************************************)
+(*                                                                      *)
+(*                            DP Model File                             *)
+(*                                                                      *)
+(*     This model contains a Dark gauge force extension of the SM.      *)
+(*     Modified form Standard model v1.4.7.                             *)
+(*                                                                      *)
+(************************************************************************)
+
+(****************************** Information *****************************)
+
+M$ModelName = "PD";
+
+M$Information = {
+  Authors      -> {"Xu-Liang Zhu"},
+  Version      -> "0.1",
+  Date         -> "April 3th 2021",
+  Institutions -> {"Tsung-Dao Lee Institute, Shanghai Jiao Tong University"},
+  Emails       -> {"xuliangz@mail.sdu.edu.cn"},
+  URLs         -> "https://gitlab.com/yulei_zhang/darkshine-simulation"
+};
+
+(****************************** Change log ******************************)
+
+
+(********************************* vevs *********************************)
+
+M$vevs = { {Phi[2],vev} };
+
+(***************************** Gauge Groups *****************************)
+
+M$GaugeGroups = {
+  U1Y  == { 
+    Abelian          -> True,  
+    CouplingConstant -> g1, 
+    GaugeBoson       -> B, 
+    Charge           -> Y
+  },
+  SU2L == { 
+    Abelian           -> False, 
+    CouplingConstant  -> gw, 
+    GaugeBoson        -> Wi, 
+    StructureConstant -> Eps, 
+    Representations   -> {Ta,SU2D}, 
+    Definitions       -> {Ta[a_,b_,c_]->PauliSigma[a,b,c]/2, FSU2L[i_,j_,k_]:> I Eps[i,j,k]}
+  },
+  SU3C == { 
+    Abelian           -> False, 
+    CouplingConstant  -> gs, 
+    GaugeBoson        -> G,
+    StructureConstant -> f, 
+    Representations   -> {T,Colour}, 
+    SymmetricTensor   -> dSUN
+  }
+};
+
+(************************** Indiex definitions **************************)
+
+IndexRange[Index[SU2W      ]] = Unfold[Range[3]]; 
+IndexRange[Index[SU2D      ]] = Unfold[Range[2]];
+IndexRange[Index[Gluon     ]] = NoUnfold[Range[8]];
+IndexRange[Index[Colour    ]] = NoUnfold[Range[3]]; 
+IndexRange[Index[Generation]] = Range[3];
+
+IndexStyle[SU2W,       j];
+IndexStyle[SU2D,       k];
+IndexStyle[Gluon,      a];
+IndexStyle[Colour,     m];
+IndexStyle[Generation, f];
+
+(************ Interactino order (as e.g. used by MadGraph5)  ************)
+
+M$InteractionOrderHierarchy = {
+     {QCD, 1},
+     {QED, 2}
+    };
+
+(**************************** Load Particle Classes *********************)
+
+Get["DPParticleClasses.fr"];
+
+(*************************** Load Parameters ****************************)
+
+Get["DPParameters.fr"];
+
+(*************************** Load Lagrangian ****************************)
+
+FeynmanGauge = True;
+
+Get["DPLagrangian.fr"];
