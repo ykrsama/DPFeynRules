@@ -65,6 +65,19 @@ M$ClassesDescription = {
     FullName         -> "G"
   },
 
+  V[5] == {
+    ClassName        -> DA,
+    SelfConjugate    -> True,
+    Mass             -> {MDA, 0.01},
+    Width            -> {WDA, Internal},
+    ParticleName     -> "da",
+    PDG              -> 50012,
+    PropagatorLabel  -> "da",
+    PropagatorType   -> W,
+    PropagatorArrow  -> None,
+    FullName         -> "DarkPhoton"
+  },
+
   (************** Ghosts: related to physical gauge bosons **************)
 
   U[1] == { 
@@ -129,6 +142,18 @@ M$ClassesDescription = {
     PropagatorArrow -> Forward
   },
 
+  U[5] == {
+    ClassName       -> ghDA,
+    SelfConjugate   -> False,
+    Ghost           -> dA,
+    QuantumNumbers  -> {GhostNumber -> 1},
+    Mass            -> {MDA, 0.01},
+    Width           -> {WDA, Internal},
+    PropagatorLabel -> "udA",
+    PropagatorType  -> GhostDash,
+    PropagatorArrow -> Forward
+  },
+
  (*************** Gauge bosons: unphysical vector fields ***************)
 
   V[11] == { 
@@ -156,6 +181,7 @@ M$ClassesDescription = {
     Ghost         -> B, 
     Definitions   -> { ghB -> -sw ghZ + cw ghA}
   },
+
   U[12] == {
     ClassName     -> ghWi,
     Unphysical    -> True,

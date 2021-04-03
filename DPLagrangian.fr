@@ -62,12 +62,12 @@ LGhost := Block[{LGh1,LGhw,LGhs,LGhphi,mu, generators,gh,ghbar,Vectorize,phi1,ph
   ExpandIndices[ LGhs + If[FeynmanGauge, LGh1 + LGhw + LGhphi,0], FlavorExpand->SU2W]
 ];
 
-(*************************** DP Lagrangian ******************************)
+(*********************** DarkPhoton Lagrangian **************************)
 
-LDP := Block[{mu,nu}
-  ExpandIndices[]
+LDA := Block[{mu,nu}
+  ExpandIndices[ epsY FS[B,mu,nu] FS[DA,mu,nu] + 1/4 FS[DA,mu,nu] FS[DA,mu,nu] + MDA^2 DA[mu] DA[mu] , FlavorExpand->SU2W]
 ];
 
 (************************* Total DP Lagrangian  *************************)
 
-LSM := LGauge + LFermions + LHiggs + LYukawa + LGhost +LDP;
+LDP := LGauge + LDA + LFermions + LHiggs + LYukawa + LGhost;
