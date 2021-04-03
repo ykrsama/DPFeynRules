@@ -64,7 +64,7 @@ LGhost := Block[{LGh1,LGhw,LGhs,LGhphi,mu, generators,gh,ghbar,Vectorize,phi1,ph
 
 (*********************** DarkPhoton Lagrangian **************************)
 
-LDA := Block[{mu,nu}
+LDA := Block[{mu,nu},
   ExpandIndices[ epsY FS[B,mu,nu] FS[DA,mu,nu] + 1/4 FS[DA,mu,nu] FS[DA,mu,nu] + MDA^2 DA[mu] DA[mu] , FlavorExpand->SU2W]
 ];
 
