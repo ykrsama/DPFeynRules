@@ -12,7 +12,7 @@
 M$ModelName = "PD";
 
 M$Information = {
-  Authors      -> {"Xu-Liang Zhu"},
+  Authors      -> {"Xiang Chen", "Xu-Liang Zhu"},
   Version      -> "0.1",
   Date         -> "April 3th 2021",
   Institutions -> {"Tsung-Dao Lee Institute, Shanghai Jiao Tong University"},

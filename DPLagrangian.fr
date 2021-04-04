@@ -9,7 +9,10 @@
 (*************************** SM Lagrangian ****************************)
 
 LGauge := Block[{mu,nu,ii,aa}, 
-  ExpandIndices[-1/4 FS[B,mu,nu] FS[B,mu,nu] - 1/4 FS[Wi,mu,nu,ii] FS[Wi,mu,nu,ii] - 1/4 FS[G,mu,nu,aa] FS[G,mu,nu,aa], FlavorExpand->SU2W]
+  ExpandIndices[
+    -1/4 FS[B,mu,nu] FS[B,mu,nu] - 1/4 FS[Wi,mu,nu,ii] FS[Wi,mu,nu,ii] - 1/4 FS[G,mu,nu,aa] FS[G,mu,nu,aa],
+    FlavorExpand->SU2W
+  ]
 ];
 
 LFermions := Block[{mu}, 
