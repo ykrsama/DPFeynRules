@@ -81,13 +81,13 @@ M$ClassesDescription = {
   },
 
   V[6] == {
-    ClassName        -> DA,
+    ClassName        -> XA,
     SelfConjugate    -> True,
-    Mass             -> {MDA, 1},
-    Width            -> {WDA, Internal},
-    ParticleName     -> "da",
+    Mass             -> {MXA, 1},
+    Width            -> {WXA, Internal},
+    ParticleName     -> "xa",
     PDG              -> 50012,
-    PropagatorLabel  -> "da",
+    PropagatorLabel  -> "xa",
     PropagatorType   -> W,
     PropagatorArrow  -> None,
     FullName         -> "DarkPhoton"
@@ -158,13 +158,13 @@ M$ClassesDescription = {
   },
 
   (* U[6] == {
-    ClassName       -> ghDA,
+    ClassName       -> ghXA,
     SelfConjugate   -> False,
-    Ghost           -> dA,
+    Ghost           -> XA,
     QuantumNumbers  -> {GhostNumber -> 1},
-    Mass            -> {MDA, 1},
-    Width           -> {WDA, Internal},
-    PropagatorLabel -> "udA",
+    Mass            -> {MXA, 1},
+    Width           -> {WXA, Internal},
+    PropagatorLabel -> "uXA",
     PropagatorType  -> GhostDash,
     PropagatorArrow -> Forward
   }, *)

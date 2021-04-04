@@ -62,10 +62,10 @@ LGhost := Block[{LGh1,LGhw,LGhs,LGhphi,mu, generators,gh,ghbar,Vectorize,phi1,ph
   ExpandIndices[ LGhs + If[FeynmanGauge, LGh1 + LGhw + LGhphi,0], FlavorExpand->SU2W]
 ];
 
-(*********************** DarkPhoton Lagrangian **************************)
+(***************** Dark Photon Kinetic Mixing Lagrangian ****************)
 
-LDA := Block[{mu,nu},
-  ExpandIndices[ - epsi/2 FS[B,mu,nu] FS[DA,mu,nu] - 1/4 FS[DA,mu,nu] FS[DA,mu,nu] + MDA^2/2 DA[mu] DA[mu] , FlavorExpand->SU2W]
+LXA := Block[{mu,nu},
+  ExpandIndices[ - epsi/2 FS[B,mu,nu] FS[XA,mu,nu] - 1/4 FS[XA,mu,nu] FS[XA,mu,nu] + MXA^2/2 XA[mu] XA[mu] , FlavorExpand->SU2W]
 ];
 (*ref:arxiv:1209.6083v2*)
 
