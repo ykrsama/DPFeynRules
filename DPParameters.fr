@@ -30,7 +30,7 @@ M$Parameters = {
     OrderBlock       -> 1,
     Value            -> 1*^-4,
     InteractionOrder -> {QED,1},
-    Tex              -> \[Epsilon]
+    TeX              -> \[Epsilon],
     Description      -> "Kinetic mixing parameter between hypercharge and dark photon"
   },
 
