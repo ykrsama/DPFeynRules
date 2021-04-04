@@ -71,4 +71,4 @@ LXA := Block[{mu,nu},
 
 (************************* Total DP Lagrangian  *************************)
 
-LDP := LGauge + LDA + LFermions + LHiggs + LYukawa + LGhost;
+LDP := LGauge + LXA + LFermions + LHiggs + LYukawa + LGhost;
