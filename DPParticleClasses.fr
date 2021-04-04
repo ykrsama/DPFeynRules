@@ -66,6 +66,21 @@ M$ClassesDescription = {
   },
 
   V[5] == {
+    ClassName        -> NUC,
+    SelfConjugate    -> False,
+    Mass             -> {MNUC, 171.3128},
+    Width            -> 0,
+    ParticleName     -> "nuc",
+    AntiParticleName -> "nuc~",
+    QuantumNumbers   -> {Q -> 74},
+    PDG              -> 50011,
+    PropagatorLabel  -> "nuc",
+    PropagatorType   -> Straight,
+    PropagatorArrow  -> Forward,
+    FullName         -> "Nuclei"
+  },
+
+  V[6] == {
     ClassName        -> DA,
     SelfConjugate    -> True,
     Mass             -> {MDA, 1},
@@ -142,7 +157,7 @@ M$ClassesDescription = {
     PropagatorArrow -> Forward
   },
 
-  U[5] == {
+  (* U[6] == {
     ClassName       -> ghDA,
     SelfConjugate   -> False,
     Ghost           -> dA,
@@ -152,7 +167,7 @@ M$ClassesDescription = {
     PropagatorLabel -> "udA",
     PropagatorType  -> GhostDash,
     PropagatorArrow -> Forward
-  },
+  }, *)
 
  (*************** Gauge bosons: unphysical vector fields ***************)
 
