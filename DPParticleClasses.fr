@@ -68,7 +68,7 @@ M$ClassesDescription = {
   V[5] == {
     ClassName        -> DA,
     SelfConjugate    -> True,
-    Mass             -> {MDA, 0.01},
+    Mass             -> {MDA, 1},
     Width            -> {WDA, Internal},
     ParticleName     -> "da",
     PDG              -> 50012,
@@ -147,7 +147,7 @@ M$ClassesDescription = {
     SelfConjugate   -> False,
     Ghost           -> dA,
     QuantumNumbers  -> {GhostNumber -> 1},
-    Mass            -> {MDA, 0.01},
+    Mass            -> {MDA, 1},
     Width           -> {WDA, Internal},
     PropagatorLabel -> "udA",
     PropagatorType  -> GhostDash,
