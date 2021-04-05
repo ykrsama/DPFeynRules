@@ -72,7 +72,7 @@ M$ClassesDescription = {
     Width            -> 0,
     ParticleName     -> "nuc",
     AntiParticleName -> "nuc~",
-    QuantumNumbers   -> {Q -> 74},
+    QuantumNumbers   -> {Q -> ZNUC},
     PDG              -> 50011,
     PropagatorLabel  -> "nuc",
     PropagatorType   -> Straight,

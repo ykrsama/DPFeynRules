@@ -29,7 +29,7 @@ M$Parameters = {
     BlockName        -> DPINPUTS,
     OrderBlock       -> 1,
     Value            -> 1*^-4,
-    InteractionOrder -> {QED,1},
+    InteractionOrder -> {QED,2},
     TeX              -> \[Epsilon],
     Description      -> "Kinetic mixing parameter between hypercharge and dark photon"
   },
@@ -41,6 +41,10 @@ M$Parameters = {
     Value         -> 1,
     ParameterName -> Rs,
     Description   -> "Energy dependent ratio R(s) = sigma(e+ e- > hadrons,s) / sigma(e+ e- > mu+ mu-, s)"
+  },
+
+  ZNUC == {
+    ParameterType   -> 
   },
 
   (********************** SM External parameters  **********************)
@@ -68,7 +72,7 @@ M$Parameters = {
     ParameterType    -> External,
     BlockName        -> SMINPUTS,
     OrderBlock       -> 3,
-    Value            -> 0.1184, 
+    Value            -> 0.3, 
     InteractionOrder -> {QCD,2},
     TeX              -> Subscript[\[Alpha],s],
     Description      -> "Strong coupling constant at the Z pole"
