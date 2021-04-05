@@ -43,9 +43,14 @@ M$Parameters = {
     Description   -> "Energy dependent ratio R(s) = sigma(e+ e- > hadrons,s) / sigma(e+ e- > mu+ mu-, s)"
   },
 
-  ZNUC == {
-    ParameterType   -> 
-  },
+  (* ZNUC == {
+    ParameterType -> External,
+    BlockName     -> DPINPUTS,
+    OrderBlock    -> 3,
+    Value         -> 74,
+    ParameterName -> Subscript[Z,nuc],
+    Description   -> "Atomic order of Nuclei"
+  }, *)
 
   (********************** SM External parameters  **********************)
 
