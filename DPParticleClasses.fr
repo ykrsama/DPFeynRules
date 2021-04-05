@@ -65,20 +65,9 @@ M$ClassesDescription = {
     FullName         -> "G"
   },
 
-  V[5] == {
-    ClassName        -> NUC,
-    SelfConjugate    -> False,
-    Mass             -> {MNUC, 171.3128},
-    Width            -> 0,
-    ParticleName     -> "nuc",
-    AntiParticleName -> "nuc~",
-    QuantumNumbers   -> {Q -> 74},
-    PDG              -> 50011,
-    PropagatorLabel  -> "nuc",
-    PropagatorType   -> Straight,
-    PropagatorArrow  -> Forward,
-    FullName         -> "Nuclei"
-  },
+  (******************************)
+  (**       Dark Photon        **)
+  (******************************)
 
   V[6] == {
     ClassName        -> XA,
@@ -86,7 +75,7 @@ M$ClassesDescription = {
     Mass             -> {MXA, 1},
     Width            -> {WXA, Internal},
     ParticleName     -> "xa",
-    PDG              -> 50012,
+    PDG              -> 500022,
     PropagatorLabel  -> "xa",
     PropagatorType   -> W,
     PropagatorArrow  -> None,
@@ -279,6 +268,21 @@ M$ClassesDescription = {
     ParticleName     -> {"d",  "s",  "b" },
     AntiParticleName -> {"d~", "s~", "b~"},
     FullName         -> {"d-quark", "s-quark", "b-quark"}
+  },
+
+  F[5] == {
+    ClassName        -> NUC,
+    SelfConjugate    -> False,
+    Mass             -> {MNUC, 171.3128},
+    Width            -> 0,
+    ParticleName     -> "nuc",
+    AntiParticleName -> "nuc~",
+    QuantumNumbers   -> {Q -> 74},
+    PDG              -> 500023,
+    PropagatorLabel  -> "nuc",
+    PropagatorType   -> Straight,
+    PropagatorArrow  -> Forward,
+    FullName         -> "Nuclei"
   },
 
   (******************** Fermions: unphysical fields  ********************)
