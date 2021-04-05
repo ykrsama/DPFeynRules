@@ -12,9 +12,9 @@
 M$ModelName = "PD";
 
 M$Information = {
-  Authors      -> {"Xiang Chen", "Xu-Liang Zhu"},
+  Authors      -> {"Xu-Liang Zhu", "Xiang Chen"},
   Version      -> "0.1",
-  Date         -> "April 3th 2021",
+  Date         -> "April 5th 2021",
   Institutions -> {"Tsung-Dao Lee Institute, Shanghai Jiao Tong University"},
   Emails       -> {"xuliangz@mail.sdu.edu.cn"},
   URLs         -> "https://gitlab.com/yulei_zhang/darkshine-simulation"
