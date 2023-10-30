@@ -1,6 +1,6 @@
-# This file was automatically created by FeynRules 2.3.41
-# Mathematica version: 12.1.0 for Microsoft Windows (64-bit) (March 14, 2020)
-# Date: Mon 5 Apr 2021 18:27:30
+# This file was automatically created by FeynRules 2.3.49
+# Mathematica version: 12.3.1 for Mac OS X ARM (64-bit) (July 24, 2021)
+# Date: Mon 30 Oct 2023 19:35:38
 
 
 from object_library import all_lorentz, Lorentz
@@ -42,7 +42,7 @@ FFS4 = Lorentz(name = 'FFS4',
 
 FFV1 = Lorentz(name = 'FFV1',
                spins = [ 2, 2, 3 ],
-               structure = 'Gamma(3,2,1)')
+               structure = 'FormFactor(P(-1,1)*P(-1,2))*Gamma(3,2,1)')
 
 FFV2 = Lorentz(name = 'FFV2',
                spins = [ 2, 2, 3 ],

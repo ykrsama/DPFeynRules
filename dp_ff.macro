@@ -1,0 +1,9 @@
+import ./DP_UFO
+generate e- nuc > e- nuc xa
+output dp_ff_test
+launch
+set ebeam1 8.0
+set ebeam2 0
+set no_parton_cut
+set ptl -1.0
+set epsi 0.1

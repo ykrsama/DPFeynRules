@@ -1,6 +1,6 @@
-# This file was automatically created by FeynRules 2.3.41
-# Mathematica version: 12.1.0 for Microsoft Windows (64-bit) (March 14, 2020)
-# Date: Mon 5 Apr 2021 18:27:30
+# This file was automatically created by FeynRules 2.3.49
+# Mathematica version: 12.3.1 for Mac OS X ARM (64-bit) (July 24, 2021)
+# Date: Mon 30 Oct 2023 19:35:38
 
 
 from __future__ import division
@@ -362,7 +362,7 @@ nuc = Particle(pdg_code = 500023,
                width = Param.ZERO,
                texname = 'nuc',
                antitexname = 'nuc~',
-               charge = 74,
+               charge = 1,
                GhostNumber = 0,
                LeptonNumber = 0,
                Y = 0)

@@ -9,7 +9,7 @@
 
 (****************************** Information *****************************)
 
-M$ModelName = "PD";
+M$ModelName = "DP";
 
 M$Information = {
   Authors      -> {"Xu-Liang Zhu", "Xiang Chen"},

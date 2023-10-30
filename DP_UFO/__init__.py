@@ -45,6 +45,6 @@ else:
 gauge = [0, 1]
 
 
-__author__ = "Xiang Chen, Xu-Liang Zhu"
-__date__ = "April 3th 2021"
+__author__ = "Xu-Liang Zhu, Xiang Chen"
+__date__ = "April 5th 2021"
 __version__= "0.1"
