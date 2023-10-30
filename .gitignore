@@ -4,3 +4,5 @@ DP_check.nb
 *.pyc
 output_*
 .DS_Store
+ME5_debug
+py.py
