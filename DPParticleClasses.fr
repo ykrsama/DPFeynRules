@@ -273,7 +273,7 @@ M$ClassesDescription = {
   F[5] == {
     ClassName        -> NUC,
     SelfConjugate    -> False,
-    Mass             -> {MNUC, 171.3128},
+    Mass             -> {MNUC, 184.0},
     Width            -> 0,
     ParticleName     -> "nuc",
     AntiParticleName -> "nuc~",

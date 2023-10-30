@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 12.3.1 for Mac OS X ARM (64-bit) (July 24, 2021)
-# Date: Mon 30 Oct 2023 19:35:38
+# Date: Mon 30 Oct 2023 21:24:41
 
 
 
@@ -40,6 +40,38 @@ Rs = Parameter(name = 'Rs',
                texname = '\\text{Rs}',
                lhablock = 'DPINPUTS',
                lhacode = [ 2 ])
+
+Znuc = Parameter(name = 'Znuc',
+                 nature = 'external',
+                 type = 'real',
+                 value = 74,
+                 texname = '\\text{Znuc}',
+                 lhablock = 'DPINPUTS',
+                 lhacode = [ 3 ])
+
+dnuc = Parameter(name = 'dnuc',
+                 nature = 'external',
+                 type = 'real',
+                 value = 0.005069502007561487,
+                 texname = '\\text{dnuc}',
+                 lhablock = 'DPINPUTS',
+                 lhacode = [ 4 ])
+
+mpnuc = Parameter(name = 'mpnuc',
+                  nature = 'external',
+                  type = 'real',
+                  value = 0.938,
+                  texname = '\\text{mpnuc}',
+                  lhablock = 'DPINPUTS',
+                  lhacode = [ 5 ])
+
+mupnuc = Parameter(name = 'mupnuc',
+                   nature = 'external',
+                   type = 'real',
+                   value = 2.79,
+                   texname = '\\text{mupnuc}',
+                   lhablock = 'DPINPUTS',
+                   lhacode = [ 6 ])
 
 aEWM1 = Parameter(name = 'aEWM1',
                   nature = 'external',
@@ -228,7 +260,7 @@ MB = Parameter(name = 'MB',
 MNUC = Parameter(name = 'MNUC',
                  nature = 'external',
                  type = 'real',
-                 value = 171.3128,
+                 value = 184.,
                  texname = '\\text{MNUC}',
                  lhablock = 'MASS',
                  lhacode = [ 500023 ])
@@ -278,6 +310,18 @@ WXA = Parameter(name = 'WXA',
                 type = 'real',
                 value = '0.0024324508579189716*(( (1 + (2*Me**2)/MXA**2)*cmath.sqrt(1 - (4*Me**2)/MXA**2) if MXA>2*Me else 0 ) + ( (1 + (2*MMU**2)/MXA**2)*(1 + Rs)*cmath.sqrt(1 - (4*MMU**2)/MXA**2) if MXA>2*MMU else 0 ))*epsi**2*MXA',
                 texname = '\\text{WXA}')
+
+anuc = Parameter(name = 'anuc',
+                 nature = 'internal',
+                 type = 'real',
+                 value = '111/(Me*Znuc**0.3333333333333333)',
+                 texname = '\\text{anuc}')
+
+apnuc = Parameter(name = 'apnuc',
+                  nature = 'internal',
+                  type = 'real',
+                  value = '773/(Me*Znuc**0.6666666666666666)',
+                  texname = '\\text{apnuc}')
 
 aEW = Parameter(name = 'aEW',
                 nature = 'internal',

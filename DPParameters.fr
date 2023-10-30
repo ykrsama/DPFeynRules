@@ -43,14 +43,38 @@ M$Parameters = {
     Description   -> "Energy dependent ratio R(s) = sigma(e+ e- > hadrons,s) / sigma(e+ e- > mu+ mu-, s)"
   },
 
-  (* ZNUC == {
+  Znuc == {
     ParameterType -> External,
     BlockName     -> DPINPUTS,
     OrderBlock    -> 3,
     Value         -> 74,
-    ParameterName -> Subscript[Z,nuc],
     Description   -> "Atomic order of Nuclei"
-  }, *)
+  },
+
+  dnuc == {
+    ParameterType -> External,
+    BlockName     -> DPINPUTS,
+    OrderBlock    -> 4,
+    Value         -> 0.005069502007561487,
+    Description   -> "The second finite nuclear size d = 0.164 * A^-2/3"
+  },
+
+  mpnuc == {
+    ParameterType -> External,
+    BlockName     -> DPINPUTS,
+    OrderBlock    -> 5,
+    Value         -> 0.938,
+    Description   -> "proton mass"
+  },
+
+  mupnuc == {
+    ParameterType -> External,
+    BlockName     -> DPINPUTS,
+    OrderBlock    -> 6,
+    Value         -> 2.79,
+    Description   -> "Proton magnetic moment"
+  },
+
 
   (********************** SM External parameters  **********************)
 
@@ -174,6 +198,18 @@ M$Parameters = {
                      ),
     ParameterName -> WXA,
     Description   -> "Width of dark photon"
+  },
+
+  anuc == {
+    ParameterType -> Internal,
+    Value         -> 111 * Znuc^(-1/3) / Me,
+    Description   -> "Nuclear parameter a = 51739.8 "
+  },
+
+  apnuc == {
+    ParameterType -> Internal,
+    Value         -> 773 * Znuc^(-2/3) / Me,
+    Description   -> "Nuclear parameter ap = 85823.1"
   },
 
   (********************** SM Internal Parameters  ***********************)

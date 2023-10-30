@@ -1,2 +1,6 @@
 DP.nb
+DP_check.nb
 .vscode
+*.pyc
+output_*
+.DS_Store

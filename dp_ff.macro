@@ -1,6 +1,6 @@
 import ./DP_UFO
 generate e- nuc > e- nuc xa
-output dp_ff_test
+output test_dp_ff
 launch
 set ebeam1 8.0
 set ebeam2 0
