@@ -42,6 +42,10 @@ FFS4 = Lorentz(name = 'FFS4',
 
 FFV1 = Lorentz(name = 'FFV1',
                spins = [ 2, 2, 3 ],
+               structure = 'Gamma(3,2,1)')
+
+FFV1FF = Lorentz(name = 'FFV1FF',
+               spins = [ 2, 2, 3 ],
                structure = 'FF * Gamma(3,2,1)',
                formfactors = [ForFac.FF])
 
@@ -52,6 +56,7 @@ FFV2 = Lorentz(name = 'FFV2',
 FFV3 = Lorentz(name = 'FFV3',
                spins = [ 2, 2, 3 ],
                structure = 'Gamma(3,2,-1)*ProjP(-1,1)')
+
 
 VSS1 = Lorentz(name = 'VSS1',
                spins = [ 3, 1, 1 ],

@@ -1,0 +1,3 @@
+import ./DP_UFO # This is comment
+generate e- nuc > e- xa nuc
+output output_enuc_exanuc

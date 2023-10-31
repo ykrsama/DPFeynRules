@@ -1,0 +1,9 @@
+launch
+set mxa 0.001
+set WXA Auto
+set nevents 100000
+set epsi 1
+set ebeam1 8.0
+set ebeam2 0
+set no_parton_cut
+set ptl -1.0

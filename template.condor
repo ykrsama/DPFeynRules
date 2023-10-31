@@ -1,0 +1,24 @@
+executable = ./bin/madevent
+arguments = dp_launch.macro
+universe = vanilla
+initialdir = ./
+notification = Complete
+getenv = TRUE
+
+should_transfer_files = NO
+
+request_cpus = 10
+
+log = dp.log
+error = dp.err
+output = dp.out
+
+Rank = LastBenchmark
+
+Requirements = ( OpSysName == "CentOS" )
+
+# submit as a factory with an idle jobs limit
+#max_idle = 500
+#max_materialize = 500
+
+queue

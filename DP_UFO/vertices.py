@@ -234,7 +234,7 @@ V_37 = Vertex(name = 'V_37',
 V_38 = Vertex(name = 'V_38',
               particles = [ P.nuc__tilde__, P.nuc, P.a ],
               color = [ '1' ],
-              lorentz = [ L.FFV1 ],
+              lorentz = [ L.FFV1FF ],
               couplings = {(0,0):C.GC_129})
 
 V_39 = Vertex(name = 'V_39',
