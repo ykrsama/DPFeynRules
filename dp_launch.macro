@@ -1,4 +1,5 @@
 launch
+analysis=OFF
 set mxa 0.001
 set WXA Auto
 set nevents 100000
