@@ -6,3 +6,4 @@ jobs_*
 .DS_Store
 ME5_debug
 py.py
+DP_UFO/py3_model.pkl
