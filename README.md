@@ -1,4 +1,18 @@
-# Download feynrule, and create a Mathematica notebook
+# Dark Photon Kinetic Mixing Model
+
+Requirement: MadGraph 3.x
+
+## Usage
+
+This script will create and submit condor job:
+
+```
+./gen_jobs.sh
+```
+
+## Re-generate UFO:
+
+1. Download feynrule, and create a Mathematica notebook
 
 Notebook example:
 ```
@@ -15,10 +29,11 @@ LoadModel["DPmodel.fr"]
 WriteUFO[LDP];
 ```
 
-add form factors:
+2. Add form factors:
+
 see https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/FormFactors
 
-form_factors.py:
+example form_factors.py:
 
 ```
 from object_library import all_form_factors, FormFactor

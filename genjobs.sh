@@ -15,6 +15,7 @@ launch_macro="dp_launch.macro"
 scan_list="dp_scan.txt"
 scan_kwd="set mxa"
 submit_now="y"
+
 read -p "Jobs dir to create? (default ${job_dir}): " read_job_dir
 if [[ $read_job_dir != "" ]]; then
     job_dir=$read_job_dir
@@ -27,18 +28,6 @@ read -p "Submit condor now? (default ${submit_now}): " read_submit_now
 if [[ $read_submit_now != "" ]]; then
     submit_now=$read_submit_now
 fi
-#read -p "Generation macro? (default ${gen_macro}): " read_gen_macro
-#if [[ $read_gen_macro != "" ]]; then
-#    gen_macro=$read_gen_macro
-#fi
-#read -p "Launch macro? (default ${launch_macro}): " read_launch_macro
-#if [[ $read_launch_macro != "" ]]; then
-#    launch_macro=$read_launch_macro
-#fi
-#read -p "Scan list? (default ${scan_list}): " read_scan_list
-#if [[ $read_scan_list != "" ]]; then
-#    scan_list=$read_scan_list
-#fi
 
 # ==========================
 # Main
