@@ -1,7 +1,6 @@
 launch
 analysis=OFF
 set Map 0.001
-set Wap Auto
 set nevents 100000
 set epsi 1
 set ebeam1 8.0
