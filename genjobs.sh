@@ -5,7 +5,6 @@ if ! command -v mg5_aMC &> /dev/null ; then
     echo "[ERROR] mg5_aMC: command not found"
     exit
 fi
-
 # ========================
 # Settings 
 # ------------------------
@@ -56,9 +55,14 @@ while read -r line; do
     cp ../template.condor ${target_output}/submit.condor
     if [[ $submit_now == "y" ]]; then
         cd ${target_output}
-        condor_submit submit.condor
+        if command -v condor_submit &> /dev/null ; then
+            condor_submit submit.condor
+        else
+            ./bin/madevent ${launch_macro} > dp.out 2> dp.err &
+        fi
         cd ..
     fi
     let n++
 done < ${scan_list}
 rm -r ${origin_output}
+wait

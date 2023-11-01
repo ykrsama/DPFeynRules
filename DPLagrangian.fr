@@ -68,13 +68,13 @@ LGhost := Block[{LGh1,LGhw,LGhs,LGhphi,mu, generators,gh,ghbar,Vectorize,phi1,ph
 (***************** Nucleus-photon ****************)
 
 LNUC := Block[{mu},
-  ExpandIndices[ ee Znuc NUCbar.Ga[mu].NUC.A[mu], FlavorExpand->SU2W]
+  ExpandIndices[ Znuc ee A[mu] (NUCbar.Ga[mu].ProjP.NUC + NUCbar.Ga[mu].ProjM.NUC), FlavorExpand->SU2W]
 ];
 
 (***************** Dark Photon Kinetic Mixing Lagrangian ****************)
 
 LXA := Block[{mu,nu},
-  ExpandIndices[ - epsi/2 FS[B,mu,nu] FS[XA,mu,nu] - 1/4 FS[XA,mu,nu] FS[XA,mu,nu] + MXA^2/2 XA[mu] XA[mu] - epsi ee lbar.Ga[mu].l.XA[mu], FlavorExpand->SU2W]
+  ExpandIndices[ - epsi/2 FS[B,mu,nu] FS[XA,mu,nu] - 1/4 FS[XA,mu,nu] FS[XA,mu,nu] + MXA^2/2 XA[mu] XA[mu] - epsi ee XA[mu] (lbar.Ga[mu].ProjP.l + lbar.Ga[mu].ProjM.l), FlavorExpand->SU2W]
 ];
 (*ref:arxiv:1209.6083v2*)
 
