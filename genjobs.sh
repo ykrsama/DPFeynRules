@@ -8,7 +8,7 @@ fi
 # ========================
 # Settings 
 # ------------------------
-job_dir="jobs_enuc_eapnuc"
+job_dir="jobs_enuc_eapnuc_1"
 gen_macro="dp_generate.macro"
 launch_macro="dp_launch.macro"
 scan_list="dp_scan.txt"
