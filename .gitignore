@@ -6,4 +6,4 @@ jobs_*
 .DS_Store
 MG5_debug
 py.py
-DP_UFO/py3_model.pkl
+*/py3_model.pkl

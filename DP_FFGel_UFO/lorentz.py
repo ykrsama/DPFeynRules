@@ -44,6 +44,10 @@ FFV1 = Lorentz(name = 'FFV1',
                spins = [ 2, 2, 3 ],
                structure = 'Gamma(3,2,1)')
 
+FFV1FF = Lorentz(name = 'FFV1FF',
+               spins = [ 2, 2, 3 ],
+               structure = 'mymdl_FormFactor(-P(-1,3)**2) * Gamma(3,2,1)')
+
 FFV2 = Lorentz(name = 'FFV2',
                spins = [ 2, 2, 3 ],
                structure = 'Gamma(3,2,-1)*ProjM(-1,1)')

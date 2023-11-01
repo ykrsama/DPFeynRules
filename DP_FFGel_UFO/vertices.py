@@ -738,7 +738,7 @@ V_121 = Vertex(name = 'V_121',
 V_122 = Vertex(name = 'V_122',
                particles = [ P.nuc__tilde__, P.nuc, P.a ],
                color = [ '1' ],
-               lorentz = [ L.FFV1 ],
+               lorentz = [ L.FFV1FF ],
                couplings = {(0,0):C.GC_139})
 
 V_123 = Vertex(name = 'V_123',
