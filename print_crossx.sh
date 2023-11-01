@@ -7,9 +7,7 @@ do
     scan_file=$(ls ${outdir}/Events/scan_*.txt)
     while read -r line; do
         if [[ ${line:0:1} == "#" ]]; then continue; fi
-        mass=$(echo $line|cut -d' ' -f2)
-        crossx=$(echo $line|cut -d' ' -f3)
-        echo $mass $crossx >> $out_file
+        echo $line >> $out_file
     done < $scan_file
     
     #for results in $(ls $outdir/HTML/run_*/results.html)
