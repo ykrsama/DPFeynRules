@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 12.3.1 for Mac OS X ARM (64-bit) (July 24, 2021)
-# Date: Wed 1 Nov 2023 16:29:07
+# Date: Wed 1 Nov 2023 22:12:00
 
 
 # 
@@ -34,13 +34,13 @@
 # Parameter definitions
 #
 
-   * Parameter WXA has no value. Default value 1 assigned.
+   * Parameter Wap has no value. Default value 1 assigned.
 
 
 # Vertices
    * Calling FeynmanRules for 1 Lagrangians.
-   * Number of classes vertices: 95
-   * Number of flavored vertices: 167
+   * Number of classes vertices: 97
+   * Number of flavored vertices: 173
    * Saved vertices in InterfaceRun[ 1 ].
    * Checked QNumber conservation.
       - Quantum number GhostNumber conserved in all vertices.
@@ -53,19 +53,19 @@
 # Vertex definitions
 #
 
-   * 167 vertices written.
+   * 173 vertices written.
    * vertices.py written.
 #
 # Lorentz structure definitions
 #
 
-   * 20 lorentz structures written.
+   * 21 lorentz structures written.
    * lorentz.py written.
 #
 # Coupling definitions
 #
 
-   * 138 couplings written.
+   * 148 couplings written.
    * couplings.py written.
 #
 # Coupling order definitions

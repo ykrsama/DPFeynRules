@@ -1,3 +1,3 @@
 import model ./DP_UFO
-generate e- nuc > e- xa nuc
-output output_enuc_exanuc
+generate e- nuc > e- ap nuc
+output output_enuc_eapnuc

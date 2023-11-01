@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 12.3.1 for Mac OS X ARM (64-bit) (July 24, 2021)
-# Date: Wed 1 Nov 2023 16:29:18
+# Date: Wed 1 Nov 2023 22:12:12
 
 
 from __future__ import division
@@ -67,15 +67,15 @@ g = Particle(pdg_code = 21,
              LeptonNumber = 0,
              Y = 0)
 
-xa = Particle(pdg_code = 500022,
-              name = 'xa',
-              antiname = 'xa',
+ap = Particle(pdg_code = 500022,
+              name = 'ap',
+              antiname = 'ap',
               spin = 3,
               color = 1,
-              mass = Param.MXA,
-              width = Param.WXA,
-              texname = 'xa',
-              antitexname = 'xa',
+              mass = Param.Map,
+              width = Param.Wap,
+              texname = 'ap',
+              antitexname = 'ap',
               charge = 0,
               GhostNumber = 0,
               LeptonNumber = 0,

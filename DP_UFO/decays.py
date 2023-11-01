@@ -1,11 +1,23 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 12.3.1 for Mac OS X ARM (64-bit) (July 24, 2021)
-# Date: Wed 1 Nov 2023 16:29:18
+# Date: Wed 1 Nov 2023 22:12:12
 
 
 from object_library import all_decays, Decay
 import particles as P
 
+
+Decay_ap = Decay(name = 'Decay_ap',
+                 particle = P.ap,
+                 partial_widths = {(P.b,P.b__tilde__):'(((4*ee**2*epsi**2*Map**2)/3. + (8*ee**2*epsi**2*MB**2)/3.)*cmath.sqrt(Map**4 - 4*Map**2*MB**2))/(48.*cmath.pi*abs(Map)**3)',
+                                   (P.c,P.c__tilde__):'(((16*ee**2*epsi**2*Map**2)/3. + (32*ee**2*epsi**2*MC**2)/3.)*cmath.sqrt(Map**4 - 4*Map**2*MC**2))/(48.*cmath.pi*abs(Map)**3)',
+                                   (P.d,P.d__tilde__):'(((4*ee**2*epsi**2*Map**2)/3. + (8*ee**2*epsi**2*MD**2)/3.)*cmath.sqrt(Map**4 - 4*Map**2*MD**2))/(48.*cmath.pi*abs(Map)**3)',
+                                   (P.e__minus__,P.e__plus__):'((4*ee**2*epsi**2*Map**2 + 8*ee**2*epsi**2*Me**2)*cmath.sqrt(Map**4 - 4*Map**2*Me**2))/(48.*cmath.pi*abs(Map)**3)',
+                                   (P.mu__minus__,P.mu__plus__):'((4*ee**2*epsi**2*Map**2 + 8*ee**2*epsi**2*MMU**2)*cmath.sqrt(Map**4 - 4*Map**2*MMU**2))/(48.*cmath.pi*abs(Map)**3)',
+                                   (P.s,P.s__tilde__):'(((4*ee**2*epsi**2*Map**2)/3. + (8*ee**2*epsi**2*MS**2)/3.)*cmath.sqrt(Map**4 - 4*Map**2*MS**2))/(48.*cmath.pi*abs(Map)**3)',
+                                   (P.t,P.t__tilde__):'(((16*ee**2*epsi**2*Map**2)/3. + (32*ee**2*epsi**2*MT**2)/3.)*cmath.sqrt(Map**4 - 4*Map**2*MT**2))/(48.*cmath.pi*abs(Map)**3)',
+                                   (P.ta__minus__,P.ta__plus__):'((4*ee**2*epsi**2*Map**2 + 8*ee**2*epsi**2*MTA**2)*cmath.sqrt(Map**4 - 4*Map**2*MTA**2))/(48.*cmath.pi*abs(Map)**3)',
+                                   (P.u,P.u__tilde__):'(((16*ee**2*epsi**2*Map**2)/3. + (32*ee**2*epsi**2*MU**2)/3.)*cmath.sqrt(Map**4 - 4*Map**2*MU**2))/(48.*cmath.pi*abs(Map)**3)'})
 
 Decay_b = Decay(name = 'Decay_b',
                 particle = P.b,
@@ -83,12 +95,6 @@ Decay_W__plus__ = Decay(name = 'Decay_W__plus__',
                                           (P.ve,P.e__plus__):'((-Me**2 + MW**2)*(-0.5*(ee**2*Me**2)/sw**2 - (ee**2*Me**4)/(2.*MW**2*sw**2) + (ee**2*MW**2)/sw**2))/(48.*cmath.pi*abs(MW)**3)',
                                           (P.vm,P.mu__plus__):'((-MMU**2 + MW**2)*(-0.5*(ee**2*MMU**2)/sw**2 - (ee**2*MMU**4)/(2.*MW**2*sw**2) + (ee**2*MW**2)/sw**2))/(48.*cmath.pi*abs(MW)**3)',
                                           (P.vt,P.ta__plus__):'((-MTA**2 + MW**2)*(-0.5*(ee**2*MTA**2)/sw**2 - (ee**2*MTA**4)/(2.*MW**2*sw**2) + (ee**2*MW**2)/sw**2))/(48.*cmath.pi*abs(MW)**3)'})
-
-Decay_xa = Decay(name = 'Decay_xa',
-                 particle = P.xa,
-                 partial_widths = {(P.e__minus__,P.e__plus__):'((8*ee**2*epsi**2*Me**2 + 4*ee**2*epsi**2*MXA**2)*cmath.sqrt(-4*Me**2*MXA**2 + MXA**4))/(48.*cmath.pi*abs(MXA)**3)',
-                                   (P.mu__minus__,P.mu__plus__):'((8*ee**2*epsi**2*MMU**2 + 4*ee**2*epsi**2*MXA**2)*cmath.sqrt(-4*MMU**2*MXA**2 + MXA**4))/(48.*cmath.pi*abs(MXA)**3)',
-                                   (P.ta__minus__,P.ta__plus__):'((8*ee**2*epsi**2*MTA**2 + 4*ee**2*epsi**2*MXA**2)*cmath.sqrt(-4*MTA**2*MXA**2 + MXA**4))/(48.*cmath.pi*abs(MXA)**3)'})
 
 Decay_Z = Decay(name = 'Decay_Z',
                 particle = P.Z,
