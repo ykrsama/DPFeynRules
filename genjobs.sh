@@ -37,6 +37,7 @@ cd $job_dir
 cp ../$gen_macro .
 cp ../$launch_macro .
 cp ../$scan_list .
+cp ../get_crossx.sh .
 sed -i -e "s:import model :import model ../:" $gen_macro
 
 mg5_aMC ${gen_macro}
