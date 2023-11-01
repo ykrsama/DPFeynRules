@@ -74,7 +74,7 @@ LNUC := Block[{mu},
 (***************** Dark Photon Kinetic Mixing Lagrangian ****************)
 
 LAp := Block[{mu,nu},
-  ExpandIndices[ - epsi FS[B,mu,nu] FS[Ap,mu,nu] - 1/4 FS[Ap,mu,nu] FS[Ap,mu,nu] + Map^2/2 Ap[mu] Ap[mu] \
+  ExpandIndices[ - epsi/2 FS[B,mu,nu] FS[Ap,mu,nu] - 1/4 FS[Ap,mu,nu] FS[Ap,mu,nu] + Map^2/2 Ap[mu] Ap[mu] \
                  + (-1)   epsi ee Ap[mu] (lbar.Ga[mu].ProjP.l   + lbar.Ga[mu].ProjM.l  ) \
                  + (-1/3) epsi ee Ap[mu] (dqbar.Ga[mu].ProjP.dq + dqbar.Ga[mu].ProjM.dq) \
                  + (2/3)  epsi ee Ap[mu] (uqbar.Ga[mu].ProjP.uq + uqbar.Ga[mu].ProjM.uq), FlavorExpand->SU2W]

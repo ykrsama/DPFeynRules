@@ -192,7 +192,7 @@ M$Parameters = {
 
   Wap == {
     ParameterType -> Internal,
-    Value         -> 1/(3*137.035999) 4 epsi^2 Map (
+    Value         -> 1/(3*137.035999) epsi^2 Map (
                          If[Map > 2 Me, (1 + 2 Me^2/Map^2) Sqrt[1 - 4 Me^2/Map^2], 0]
                        + If[Map > 2 MMU, (1 + 2 MMU^2/Map^2) Sqrt[1 - 4 MMU^2/Map^2] * (1 + Rs), 0]
                      ),

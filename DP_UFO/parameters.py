@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 12.3.1 for Mac OS X ARM (64-bit) (July 24, 2021)
-# Date: Wed 1 Nov 2023 22:12:12
+# Date: Thu 2 Nov 2023 06:10:27
 
 
 
@@ -308,7 +308,7 @@ WH = Parameter(name = 'WH',
 Wap = Parameter(name = 'Wap',
                 nature = 'internal',
                 type = 'real',
-                value = '0.009729803431675886*(( (1 + (2*Me**2)/Map**2)*cmath.sqrt(1 - (4*Me**2)/Map**2) if Map>2*Me else 0 ) + ( (1 + (2*MMU**2)/Map**2)*(1 + Rs)*cmath.sqrt(1 - (4*MMU**2)/Map**2) if Map>2*MMU else 0 ))*epsi**2*Map',
+                value = '0.0024324508579189716*(( (1 + (2*Me**2)/Map**2)*cmath.sqrt(1 - (4*Me**2)/Map**2) if Map>2*Me else 0 ) + ( (1 + (2*MMU**2)/Map**2)*(1 + Rs)*cmath.sqrt(1 - (4*MMU**2)/Map**2) if Map>2*MMU else 0 ))*epsi**2*Map',
                 texname = '\\text{Wap}')
 
 anuc = Parameter(name = 'anuc',
