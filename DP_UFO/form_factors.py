@@ -8,5 +8,6 @@ Gin = '((apnuc**2 * _t_) / (1 + apnuc**2 * _t_))**2 * (1 + _t_ * (mupnuc**2 - 1)
 
 FF = FormFactor(name = 'FF',
                 type = 'real',
-                value= ('sqrt(' + Gel + ')').replace('_t_','(P(-1,1)-P(-1,2))**2'))
+                value= ('sqrt(' + Gel + '+' + Gin + ')').replace('_t_','(P(-1,1)-P(-1,2))**2'))
+
 
