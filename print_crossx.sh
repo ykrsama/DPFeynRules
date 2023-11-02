@@ -5,6 +5,7 @@ for outdir in $(ls)
 do
     if [[ ! -d $outdir ]]; then continue ; fi
     scan_file=$(ls ${outdir}/Events/scan_*.txt)
+    if [[ ! -f $scan_file ]]; then continue; fi
     while read -r line; do
         if [[ ${line:0:1} == "#" ]]; then continue; fi
         runname=$(echo $line|cut -d' ' -f1)
