@@ -1,7 +1,7 @@
-launch
+multi_run 40
 analysis=OFF
 set Map 0.001
-set nevents 100000
+set nevents 50000
 set epsi 1
 set ebeam1 8.0
 set ebeam2 0

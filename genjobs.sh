@@ -13,7 +13,12 @@ gen_macro="dp_generate.macro"
 launch_macro="dp_launch.macro"
 scan_list="dp_scan.txt"
 scan_kwd="set Map"
-
+echo ==== $gen_macro ====
+cat $gen_macro
+echo ""
+echo ==== $launch_macro ====
+cat $launch_macro
+echo ""
 read -p "Jobs dir to create? (default ${job_dir}): " read_job_dir
 if [[ $read_job_dir != "" ]]; then
     job_dir=$read_job_dir
@@ -24,15 +29,13 @@ if [[ -d $job_dir ]]; then
 fi
 
 if command -v condor_submit &> /dev/null ; then
-    condor_now="y"
+    condor_now="n"
     read -p "Submit condor now? (default ${condor_now}): " read_condor_now
     if [[ $read_condor_now != "" ]]; then
         condor_now=$read_condor_now
     fi
-fi
-
-if [[ $condor_now != "y" ]]; then
-    bash_now="y"
+else
+    bash_now="n"
     read -p "Run bash now? (default ${bash_now}): " read_bash_now
     if [[ $read_bash_now != "" ]]; then
         bash_now=$read_bash_now
@@ -62,7 +65,9 @@ n=1
 while read -r line; do
     target_output="${origin_output}_${n}"
     cp -r ${origin_output} ${target_output}
-    sed -e "s:${scan_kwd}:${scan_kwd} scan\:\[${line}\] \#:" < $launch_macro > ${target_output}/${launch_macro}
+    #sed -e "s:${scan_kwd}:${scan_kwd} scan\:\[${line}\] \#:" < $launch_macro > ${target_output}/${launch_macro}
+    sed -e "s:${scan_kwd}:${scan_kwd} ${line} \#:" < $launch_macro > ${target_output}/${launch_macro}
+
     cp ../template.condor ${target_output}/submit.condor
     if [[ $condor_now == "y" ]]; then
         cd ${target_output}
