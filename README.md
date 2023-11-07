@@ -19,8 +19,12 @@ An interactive script will create and submit the condor job:
 
 1. **Prepare environment**
 
+   1. Mathematica (https://tiebamma.github.io/InstallTutorial/)
+
+   2. FeynRules (https://feynrules.irmp.ucl.ac.be)
+
 2. **Edit model (based on the current model)**
-   **The document for Feynrule: https://arxiv.org/pdf/1310.1921.pdf** 
+   **The document for FeynRules: https://arxiv.org/pdf/1310.1921.pdf** 
 
    File structure:
 
