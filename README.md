@@ -1,6 +1,6 @@
 # The Dark Photon Kinetic Mixing Model
 
-Requirement: MadGraph 3.x
+Requirement: MadGraph5 >= v3.5.1
 
 Reference:
 
@@ -9,17 +9,49 @@ Reference:
 
 ## Usage
 
-This script will create and submit condor job:
+An interactive script will create and submit the condor job:
 
-```
+```bash
 ./gen_jobs.sh
 ```
 
-## Recreate UFO:
+## Customize UFO:
 
-1. **Download feynrule, and create a Mathematica notebook**
+1. **Prepare environment**
 
-Notebook example:
+2. **Edit model (based on the current model)**
+   **The document for Feynrule: https://arxiv.org/pdf/1310.1921.pdf** 
+
+   File structure:
+
+   ```bash
+   DPmodel.fr  # Load all the files
+   DPLagrangian.fr  # Define Lagrangians
+   DPParticleClasses.fr  # Define particle fields
+   DPParameters.fr  # Internal and external parameters. The external parameter will who up in the parameter card in MadGraph.
+   ```
+
+   1. To add the nuclear form factor later, an N-N-e vertex was defined in the ```LNUC```  in ```DPLagrangian.fr```
+
+   2. Replace the ```LAp``` with your own BSM Lagrangian. and add it to the total Lagrangian ```LDP```.
+
+      An example of interaction between vector boson and fermion:
+
+      1. ```Znuc ee A[mu] (NUCbar.Ga[mu].ProjP.NUC + NUCbar.Ga[mu].ProjM.NUC)```
+
+         The ```.``` is the Mathematica dot function.  ```Znuc``` is the electric charge, ```ee``` is the coupling constant, ```A``` , ```NUCbar``` and ```NUC``` are vector fields. ```Ga[mu]``` is the Dirac matrix $\gamma^{\mu}$ , ```ProjP``` and ```ProjM``` are the chirality projection operators $\frac{1+\gamma^5}{2}$ and $\frac{1-\gamma^5}{2}$ .
+
+   3. Add decay width for the BSM particle, and other needed parameters in ```DPParameters.fr```
+
+   4. Define the BSM particle in ```DPParticleClasses.fr```
+
+3. **Check the Lagrangian's hermiticity, mass spectrum, and kinetic terms**
+
+   Example: ```DP_check.nb```
+
+4. **Export to UFO**
+
+Mathematica Notebook example:
 ```
 Quit[]
 Clear["Global`*"];
@@ -36,4 +68,15 @@ WriteUFO[LDP];
 
 2. **Add form factors:**
 
-see https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/FormFactors
+see https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/FormFactors#Method2:FortranWay
+
+Examples: 
+
+```
+DP_FF_UFO
+├── Fortran
+│   └── functions.f
+├── lorentz.py  # find FFV1FF
+└──  vertices.py  # find particles = [ P.nuc__tilde__, P.nuc, P.a ],
+```
+
